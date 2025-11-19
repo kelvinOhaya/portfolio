@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelvin's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar Portion -->
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about-me">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Hero/Home Portion -->
+      <section id="home">
+          <p class="title">Kelvin Ohaya</p>
+          <p class="description">
+            Building modern web experiences with clean code and creativity
+          </p>
+          <div class="helpful-links">
+            <a href="#projects">View My work</a> <a href="#">Contact Me</a>
+          </div>
+      </section>
+      <section id="about-me">
+        <p class="title">About Me</p>
+        <div class="about-me-content-section">
+          <div class="description">
+            <p>
+              Hi! My name is Kelvin Ohaya, and I am a Computer Science Major
+              from IU Indianapolis. Ever since I was a kid, I have always been
+              fascinated with computers, specifically software and how it works.
+              That love has lead me to pursue computer science, particularly
+              software engineering. Take a look around to see what work I've
+              done!
+            </p>
+            <p class="skills-title">
+              Here are some of the languages I've used:
+            </p>
+            <div class="skills">
+              <a href="https://react.dev/learn/" class="react"></a>
+              <a href="https://expressjs.com/" class="express"></a>
+              <a href="https://docs.python.org/3/" class="python"></a>
+              <a href="https://cplusplus.com/" class="cpp"></a>
+              <a href="https://docs.oracle.com/en/java/" class="java"></a>
+            </div>
+          </div>
+          <figure>
+            <img src="images/childhoodBook.png" alt="My First Coding Book" />
+            <figcaption>*My first coding book</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="projects">
+        <p class="title">Projects</p>
+        <!-- Carousel Start -->
+        <div class="carousel-container">
+          <div class="slides-and-buttons">
+            <div class="slides">
+              <div class="slide left">
+                <div style="background-color: pink;"></div>
+                </div>
+              </div>
+              <div class="slide active">
+                <div class="hover-wrapper">
+                  <h3>Chat App (React + ExpressJS)</h3>
+                  <img class="bluesky" src="images/carousel/blueskyHome.png" alt="A Picture Of BlueSky">
+                  <span class="carousel-links">
+                    <a href="#"><img src="images/icons/github.svg" alt="github repo" /></a><a href="#"><img src="images/icons/externalLink.svg" alt="live demo link" /></a>
+                  </span>
+                </div>
+              </div>
+              <div class="slide right">
+                <div style="background-color: blue"></div>
+              </div>
+              <div class="slide inactive">
+                <div style="background-color: purple"></div>
+              </div>
+              <div class="slide inactive">
+                <div style="background-color: yellow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <button type="button" id="leftBtn" class="move">&lt;</button>
+            <button type="button" id="rightBtn" class="move">&gt;</button>
+          </div>
+        </div>
+        <!-- Carousel end -->
+        </div>
+      </section>
+      <section id="contact"></section>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
