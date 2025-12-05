@@ -76,6 +76,16 @@ nav a {
   transition: transform 0.2s ease;
 }
 
+.prototype-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.prototype-link img {
+  margin-top: 5px;
+}
+
 nav a:hover {
   transform: scale(1.06);
 }
