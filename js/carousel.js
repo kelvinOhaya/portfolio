@@ -51,8 +51,6 @@ export default function initCarousel() {
 
   function moveRight() {
     //move currentIndex left with modular arithmetic
-    console.log(`Running`);
-
     currentIndex = (currentIndex + 1) % slidesArray.length;
     updateCarousel();
   }
