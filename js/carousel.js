@@ -7,13 +7,13 @@ export default function initCarousel() {
 
   if (!slidesArray.length) return;
 
-  // let the DOM decide where the currentIndex is rather than the
+  // let the DOM decide where the currentIndex is rather than the initial code
   let currentIndex = slidesArray.findIndex((slide) =>
     slide.classList.contains("active")
   );
   if (currentIndex < 0) currentIndex = 0;
 
-  // Helper functions to get the left and right elements
+  // Helper functions to get the left and right slides in the carousel
   function getLeft() {
     return (currentIndex - 1 + slidesArray.length) % slidesArray.length;
   }
